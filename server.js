@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const loansRoutes = require('./routes/loans')
+const usersRoutes = require('./routes/users');
 require('dotenv').config();
 
 const app = express();
@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // Routes
-app.use("/loans", loansRoutes);
+app.use("/user", usersRoutes);
 
 // Start Server
 app.listen(port, () => {
