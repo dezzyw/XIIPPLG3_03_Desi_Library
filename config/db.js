@@ -5,7 +5,7 @@ const dbPool = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'book'
+    database: 'library'
 });
 
 dbPool.connect((err) => {
